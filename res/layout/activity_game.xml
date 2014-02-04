@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:longClickable="false"
+    tools:context=".Game" >
+    
+    <SurfaceView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/sgtdreapta" />
+
+    
+    <Button
+        android:id="@+id/sgtstanga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sgtjos"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/stanga"
+        android:text="" />
+
+    <Button
+        android:id="@+id/sgtdreapta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sgtsus"
+        android:layout_toRightOf="@+id/sgtjos"
+        android:background="@drawable/dreapta"
+        android:text="" />
+
+    <Button
+        android:id="@+id/sgtjos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/sgtstanga"
+        android:background="@drawable/jos"
+        android:text="" />
+
+    <Button
+        android:id="@+id/sgtsus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sgtstanga"
+        android:layout_toRightOf="@+id/sgtstanga"
+        android:background="@drawable/sus"
+        android:text="" />
+
+    
+    <TextView
+        android:id="@+id/timerValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TextView" />
+
+    
+
+</RelativeLayout>
